@@ -1,0 +1,19 @@
+{
+  "name": "project-scaffold",
+  "version": "1.0.0",
+  "description": "Scarffolding for a new project using webpack for Styles and Scripts",
+  "author": "Nikolaj Boel Jensen <nbj@creationsftw.com>",
+  "license": "MIT",
+  "scripts": {
+  	"webpack": "cross-env NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+  	"dev": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+  	"hmr": "cross-env NODE_ENV=development webpack-dev-server  --inline --hot --content-base=public/ --config=node_modules/laravel-mix/setup/webpack.config.js",
+  	"production": "cross-env NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+  	"lodash": "latest",
+	"laravel-mix": "latest",
+	"vue": "latest",
+	"jquery": "latest"
+  }
+}
